@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên món ăn" />
+
+    <Spinner
+        android:id="@+id/sp_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Có khuyến mãi?"
+        android:layout_marginTop="8dp"
+        android:layoutDirection="rtl"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:layout_marginTop="8dp"/>
+
+    <GridView
+        android:id="@+id/gv_dishes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:stretchMode="columnWidth"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>
